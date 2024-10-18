@@ -7,10 +7,36 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "UrlScan/1.0.0": {
+        "dependencies": {
+          "lolcat": "1.1.64"
+        },
         "runtime": {
           "UrlScan.dll": {}
         }
-      }
+      },
+      "lolcat/1.1.64": {
+        "dependencies": {
+          "Spectre.Console": "0.47.0"
+        },
+        "runtime": {
+          "lib/net8.0/Lolcat.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.64.4962"
+          }
+        }
+      },
+      "Spectre.Console/0.47.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net7.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.47.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {}
     }
   },
   "libraries": {
@@ -18,6 +44,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "lolcat/1.1.64": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eA69XkkxDSrmT/FqBwEaHT++xa0Tmrfc2r4Jy/Yh1x341WAxO/vNkPZQZlGsGsK3btWzi2iT6AJxHf7PWVOeGg==",
+      "path": "lolcat/1.1.64",
+      "hashPath": "lolcat.1.1.64.nupkg.sha512"
+    },
+    "Spectre.Console/0.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wz8mszcZr0cSOo8GyoG9e2DFW0SkMT8/n78Q/lIXX7EbCtHNXOoOKWpJ9Str+rCYtmQOGGyDutZzubrUHK/XkA==",
+      "path": "spectre.console/0.47.0",
+      "hashPath": "spectre.console.0.47.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     }
   }
 }

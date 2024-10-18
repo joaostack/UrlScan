@@ -12,3 +12,7 @@ E:\Projects\UrlScan\obj\Debug\net8.0\refint\UrlScan.dll
 E:\Projects\UrlScan\obj\Debug\net8.0\UrlScan.pdb
 E:\Projects\UrlScan\obj\Debug\net8.0\UrlScan.genruntimeconfig.cache
 E:\Projects\UrlScan\obj\Debug\net8.0\ref\UrlScan.dll
+E:\Projects\UrlScan\bin\Debug\net8.0\Lolcat.dll
+E:\Projects\UrlScan\bin\Debug\net8.0\Spectre.Console.dll
+E:\Projects\UrlScan\obj\Debug\net8.0\UrlScan.csproj.AssemblyReference.cache
+E:\Projects\UrlScan\obj\Debug\net8.0\UrlScan.csproj.Up2Date

@@ -1,12 +1,22 @@
 ﻿using System.Text.Json;
+using Lolcat;
 using UrlScan.Repositories;
 
 namespace UrlScan
 {
     public class Program
     {
-        static async Task Main()
+        static readonly RainbowStyle style = new RainbowStyle();
+        static readonly Rainbow rainbow = new Rainbow(style);
+
+        static async Task Main(string[] args)
         {
+            if (args.Length == 0)
+            {
+                rainbow.WriteLineWithMarkup("USE: ./urlscan domain.com");
+                return;
+            }
+
             ApiRepository apiRepository = new ApiRepository();
             var api = await apiRepository.GetApi("google.com");
 
@@ -19,7 +29,7 @@ namespace UrlScan
                         WriteIndented = true,
                     });
 
-                    Console.WriteLine(resultJson);
+                    rainbow.WriteLineWithMarkup(resultJson);
                 }
             }
             else

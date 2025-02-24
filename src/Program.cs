@@ -18,7 +18,7 @@ namespace UrlScan
             }
 
             ApiRepository apiRepository = new ApiRepository();
-            var api = await apiRepository.GetApi("google.com");
+            var api = await apiRepository.GetApi(args[0]);
 
             if (api != null)
             {

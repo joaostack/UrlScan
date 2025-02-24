@@ -29,7 +29,16 @@ namespace UrlScan
                         WriteIndented = true,
                     });
 
-                    rainbow.WriteLineWithMarkup(resultJson);
+                    rainbow.WriteLineWithMarkup($"URL: {result.page.url}");
+                    rainbow.WriteLineWithMarkup($"IP: {result.page.ip}");
+                    rainbow.WriteLineWithMarkup($"ASN: {result.page.asn}");
+                    rainbow.WriteLineWithMarkup($"ASN Name: {result.page.asnname}");
+                    rainbow.WriteLineWithMarkup($"Status: {result.page.status}");
+                    rainbow.WriteLineWithMarkup($"Title: {result.page.title}");
+                    rainbow.WriteLineWithMarkup($"Country: {result.page.country}");
+                    rainbow.WriteLineWithMarkup($"Server: {result.page.server ?? "Not Found"}");
+                    rainbow.WriteLineWithMarkup($"Screenshot: {result.screenshot}");
+                    rainbow.WriteLineWithMarkup($"Requests: {result.stats.requests}");
                 }
             }
             else
